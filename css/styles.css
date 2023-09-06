@@ -168,8 +168,7 @@ header nav .color-acento {
   background-color: crimson;
   cursor: pointer;
 }
-
-button:hover {
+.boton-index:hover {
   background-color: rgb(75, 30, 39);
 }
 
@@ -342,6 +341,11 @@ footer .conteiner-copy {
   justify-content: center;
 }
 
+.form-p {
+  margin: 30px 30px;
+  text-align: center;
+}
+
 .form-padre2 {
   display: flex;
   justify-content: center;
@@ -377,45 +381,38 @@ footer .conteiner-copy {
   width: 183px;
 }
 
-.form-p {
-  margin: 30px 30px;
-  text-align: center;
-}
-
 .boton-div {
   width: 60px;
   display: flex;
   width: 100%;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .boton-div .boton-form {
   font-size: 1em;
   font-weight: bold;
   padding: 0px 20px;
-  padding-bottom: 10px;
   border-radius: 10px;
   border: 2px solid rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   background-color: crimson;
-  cursor: pointer;
-  margin-bottom: 30px;
 }
-
-.boton-form:hover {
+.boton-div .boton-form:hover {
   background-color: rgb(196, 99, 118);
 }
 
+/* Estilos de inscripcion.html version escritorio */
 @media (min-width: 1024px) {
-  /* Estilos de inscripcion.html */
   .form-padre2 {
     display: none;
   }
-  .caja-formulario p {
-    text-align: center;
+  .form-padre1 {
+    display: flex;
     justify-content: center;
+    width: 100%;
   }
-  form {
+  .form-padre1 form {
     display: flex;
     justify-content: center;
     margin: 10px;
@@ -425,16 +422,15 @@ footer .conteiner-copy {
     width: 700px;
     height: 400px;
   }
-  .form-padre1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  .form-section {
+  .form-padre1 form .form-section {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
-  input {
+  .form-padre1 form .form-section .columna1 {
+    margin: 10px;
+  }
+  .form-padre1 form .form-section .columna1 input {
     height: 25px;
     display: flex;
     margin-top: 30px;
@@ -442,39 +438,28 @@ footer .conteiner-copy {
     border-radius: 2px;
     box-shadow: 5px 5px 10px;
   }
-  .columna1 {
+  .form-padre1 form .form-section .columna2 {
     margin: 10px;
   }
-  .columna2 {
-    margin: 10px;
-  }
-  .boton-div {
-    width: 60px;
+  .form-padre1 form .form-section .columna2 input {
+    height: 25px;
     display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    border: 5px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px;
+  }
+  .form-padre1 form .form-section .columna2 .style-date {
+    width: 183px;
   }
   .boton-form {
     font-size: 1, 5em;
-    font-weight: bold;
-    padding: 0px 20px;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    background-color: crimson;
+    margin-top: 30px;
     cursor: pointer;
-  }
-  .boton-form:hover {
-    background-color: rgb(196, 99, 118);
-  }
-  .form-section {
-    display: flex;
-    justify-content: center;
   }
   .form-p {
     margin: 30px 0px;
-    text-align: center;
+    color: gray;
   }
 }
 /* Estilos Peliculas.html */
