@@ -1,0 +1,76 @@
+/* estilos del header */
+
+header {
+    nav {
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+        list-style-type: none;
+
+        .container-fluid {
+            background-color: rgb(8, 8, 8);
+            padding: 0;
+            height: auto;
+            padding-right: 30px;
+        }
+
+        .conteiner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            margin: 0;
+            padding: 25px 30px;
+            font-weight: bold;
+            color: crimson;
+            font-size: 1.6em;
+            align-items: start;
+
+        }
+
+        .navbar-toggler {
+            background-color: whitesmoke;
+            padding: 2px 4px;
+
+        }
+
+        .nav-link {
+            padding: 5px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(218, 216, 216);
+            margin: 1em;
+        }
+
+        .nav-link:hover {
+            color: crimson;
+        }
+
+        .color-acento {
+            color: crimson;
+        }
+    }
+}
+
+
+
+
+    /* Estilos de header para escritorio */
+
+
+@media (min-width: 1024px) {
+
+    .container-fluid {
+        background-color: rgb(8, 8, 8);
+        padding: 0;
+        height: 30vh;
+    }
+
+    #navbarSupportedContent {
+        padding-left: 45%;
+    }
+}

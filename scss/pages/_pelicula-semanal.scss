@@ -1,0 +1,60 @@
+/* Estilos para pelicula-semanal.html */
+
+.titulo-peli-semanal {
+    text-align: center;
+}
+
+.peli-semanal {
+    display: flex;
+    flex-direction: column;
+    
+    .img-semanal-desktop {
+        display: none;
+    }
+}
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 30px;
+    text-align: center;
+}
+
+.trailer {
+    display: flex;
+    justify-content: center;
+    margin: 50px 3px;
+}
+
+
+
+
+
+
+    /* Estilos de pelicula-semanal.html version escritorio */
+
+
+
+@media (min-width: 1024px) {
+
+    .img-semanal-mobile {
+        display: none;
+    }
+
+    .peli-semanal {
+        display: flex;
+
+        height: 120vh;
+        margin-top: 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../Recursos/portada-escritorio.jpeg");
+        padding-top: 5px;
+    }
+
+    .details p{
+    text-align: left;
+    }
+}

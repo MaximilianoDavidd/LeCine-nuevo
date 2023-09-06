@@ -1,0 +1,80 @@
+/* Estilos para el footer  version mobile*/
+
+footer {
+    background-color: black;
+    margin-top: 20px;
+
+    h4 {
+        color: rgb(214, 213, 213);
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.4em;
+    }
+
+    p {
+        margin: 0;
+        padding: 12px;
+        color: rgb(31, 30, 30);
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        color: crimson;
+        font-size: 1.6em;
+        padding: 30px;
+        padding-top: 40px;
+    }
+
+    .conteiner {
+        margin: 0;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        a {
+            margin: 10px;
+            text-decoration: none;
+        }
+    }
+
+    .conteiner-copy {
+        text-align: center;
+    }
+}
+
+
+
+/* Estilos para el footer version escritorio*/
+
+
+@media (min-width: 1024px) {
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+
+        .logo {
+            padding: 2em;
+        }
+
+        .section-contacto {
+            margin: 2em;
+        }
+
+        .conteiner-copy {
+            display: flex;
+            align-items: end;
+        }
+    }
+}
