@@ -12,99 +12,12 @@
 @import './pages/footer';
 @import'./pages/pelicula-semanal';
 @import './pages/inscripcion';
+@import './pages/galeria';
+@import './pages/peliculas';
 
 
 
 
-
-
-/* Estilos Peliculas.html */
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-#Peliculas p {
-    margin: 20px;
-}
-
-#Peliculas h2 {
-    margin: 20px;
-
-
-}
-
-.titulo-peliculas {
-    text-align: center;
-    margin: 20px;
-
-}
-
-
-
-#Peliculas .img-argentina {
-    background-image: url("../Recursos/arg11985.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-
-}
-
-
-#Peliculas .img-northman {
-    background-image: url("../Recursos/nothman.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-}
-
-
-#Peliculas .img-nope {
-    background-image: url("../Recursos/nope.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-}
-
-
-#Peliculas .img-jurassik {
-    background-image: url("../Recursos/jurassik3.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-}
-
-
-#Peliculas .img-elvis {
-    background-image: url("../Recursos/elvis.webp");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-}
 
 
 /* Estilos de series.html */
@@ -248,60 +161,6 @@
 
 
 
-/* estilos de galeria.html */
-
-
-#main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contenedor-galeria {
-    display: flex;
-    flex-direction: column;
-}
-
-.titulo-galeria {
-    width: 100%;
-    text-align: center;
-}
-
-
-
-.img-galeria {
-    width: 50vw;
-    height: auto;
-    margin-bottom: 10px;
-
-}
-
-
-.galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.galeria2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.p-img {
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-.section-noticias {
-    display: none;
-}
-
-
-
 
 
 
@@ -314,137 +173,6 @@
 
 @media (min-width: 1024px) {
 
-    /* Estilos para galeria.html version desktop */
-
-    #main {
-        height: 500vh;
-    }
-
-    .contenedor-galeria {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 0.4fr 1.6fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        height: 100%;
-    }
-
-    .titulo-galeria {
-        grid-area: 1 / 1 / 2 / 4;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        color: rgb(235, 232, 232);
-        background-image: linear-gradient(0deg,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)), url("../Recursos/galeria.webp");
-        background-size: cover;
-        height: 100vh;
-        width: 100%;
-
-    }
-
-
-    .galeria {
-        grid-area: 2 / 1 / 5 / 4;
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        align-items: baseline;
-
-    }
-
-
-    .galeria2 {
-        grid-area: 2 / 3 / 5 / 4;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: baseline;
-    }
-
-    .img-galeria {
-        width: 50vh;
-        height: auto;
-        margin: 10px 50px;
-        margin-bottom: 10vh;
-    }
-
-    .p-img {
-        margin-left: 30px;
-        margin-bottom: 10px;
-
-    }
-
-
-
-
-
-
-    /* estilos de la seccion de noticias de desktop. Version mobile no tiene esta seccion*/
-
-    .section-noticias {
-        grid-area: 1 / 4 / 5 / 5;
-        background-color: rgb(240, 235, 235);
-        padding-top: 3em;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px;
-        overflow-y: scroll;
-        height: 60%;
-        width: 100%;
-        align-items: center;
-        margin-right: 10px;
-    }
-
-    .section-noticias p {
-
-        padding: 15px;
-        margin-bottom: 10px;
-    }
-
-    .titulo-noticias h4 {
-        padding-bottom: 20px;
-        font-size: 2em;
-        text-align: center;
-    }
-
-    .section-noticias h5 {
-        padding: 10px;
-        margin-top: 40px;
-        font-size: 1em;
-    }
-
-    .section-noticias::-webkit-scrollbar {
-        width: 15px;
-    }
-
-    .section-noticias::-webkit-scrollbar-thumb {
-        background-color: rgb(235, 89, 118);
-        border-radius: 5px;
-    }
-
-    .section-noticias::-webkit-scrollbar-thumb:hover {
-        background-color: crimson;
-    }
-
-    .img-noticia {
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    hr {
-        width: 100%;
-    }
-
-
-
 
 
     /* Estilos para las categorias version desktop, documentales.html, peliculas.html y series.html*/
@@ -455,6 +183,7 @@
         text-align: left;
         flex-direction: column;
         width: 70vw;
+        background-color: red($color: #000000);
 
     }
 
@@ -465,11 +194,6 @@
     .container {
         height: auto;
     }
-
-    .titulo-peliculas {
-        font-size: 4em;
-    }
-
     .titulo-documentales {
         font-size: 4em;
     }
