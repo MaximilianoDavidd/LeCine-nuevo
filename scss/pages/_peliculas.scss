@@ -2,17 +2,17 @@
 
 #Peliculas {
     p {
-        margin: 20px;
+        margin: 1em;
     }
 
     h2 {
-        margin: 20px;
+        margin: 1em;
     }
 }
 
 .titulo-peliculas {
     text-align: center;
-    margin: 20px;
+    margin: 1em;
 }
 
 .container {
@@ -25,10 +25,10 @@
         background-image: url("../Recursos/arg11985.jpg");
         background-size: cover;
         background-position: center center;
-        height: 300px;
-        width: 200px;
-        padding: 12px 20px;
-        margin: 20px;
+        height: 20em;
+        width: 13em;
+        padding: 0.5em 1em;
+        margin: 1em;
         box-shadow: 5px 5px 10px;
 
     }
@@ -38,10 +38,10 @@
         background-image: url("../Recursos/nothman.jpg");
         background-size: cover;
         background-position: center center;
-        height: 300px;
-        width: 200px;
-        padding: 12px 20px;
-        margin: 20px;
+        height: 20em;
+        width: 13em;
+        padding: 0.5em 1em;
+        margin: 1em;
         box-shadow: 5px 5px 10px;
     }
 
@@ -50,10 +50,10 @@
         background-image: url("../Recursos/nope.jpg");
         background-size: cover;
         background-position: center center;
-        height: 300px;
-        width: 200px;
-        padding: 12px 20px;
-        margin: 20px;
+        height: 20em;
+        width: 13em;
+        padding: 0.5em 1em;
+        margin: 1em;
         box-shadow: 5px 5px 10px;
     }
 
@@ -62,10 +62,10 @@
         background-image: url("../Recursos/jurassik3.jpg");
         background-size: cover;
         background-position: center center;
-        height: 300px;
-        width: 200px;
-        padding: 12px 20px;
-        margin: 20px;
+        height: 20em;
+        width: 13em;
+        padding: 0.5em 1em;
+        margin: 1em;
         box-shadow: 5px 5px 10px;
     }
 
@@ -73,10 +73,10 @@
         background-image: url("../Recursos/elvis.webp");
         background-size: cover;
         background-position: center center;
-        height: 300px;
-        width: 200px;
-        padding: 12px 20px;
-        margin: 20px;
+        height: 20em;
+        width: 13em;
+        padding: 0.5em 1em;
+        margin: 1em;
         box-shadow: 5px 5px 10px;
     }
 }
@@ -99,7 +99,7 @@
                 width: 70vw;
 
                 p {
-                    padding-left: 10px;
+                    padding-left: 1em;
                 }
 
             }

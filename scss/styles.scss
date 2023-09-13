@@ -1,9 +1,12 @@
+/* VARIABLES */
+
 @import './variables/variables.scss';
 
 
 /* Tipografias, reset */
 
 @import './assets/reset';
+
 
 /* Estilos de las secciones */
 
@@ -14,195 +17,10 @@
 @import './pages/inscripcion';
 @import './pages/galeria';
 @import './pages/peliculas';
+@import'./pages/documentales';
+@import './pages/series';
 
 
+/* Boostrap */
 
-
-
-
-/* Estilos de series.html */
-
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-#Series p {
-    margin: 20px;
-}
-
-#Series h2 {
-    margin: 20px;
-
-
-}
-
-.titulo-series {
-    text-align: center;
-    margin: 20px;
-
-}
-
-
-
-#Series .img-black {
-    background-image: url("../Recursos/Black_Mirror.webp");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-
-}
-
-#Series .img-dahmer {
-    background-image: url("../Recursos/dahmer.webp");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-
-}
-
-#Series .img-citadel {
-    background-image: url("../Recursos/citadel.jfif");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-
-}
-
-
-
-
-
-
-
-/* Estilos de documentales.html */
-
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-#Documentales p {
-    margin: 20px;
-}
-
-#Documentales h2 {
-    margin: 20px;
-
-
-}
-
-.titulo-documentales {
-    text-align: center;
-    margin: 20px;
-
-}
-
-
-
-#Documentales .img-black {
-    background-image: url("../Recursos/CARTEL-BLACKFISH.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-
-}
-
-
-#Documentales .img-code {
-    background-image: url("../Recursos/code.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-
-}
-
-
-#Documentales .img-robin {
-    background-image: url("../Recursos/Robin\'s_Wish_Poster.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 300px;
-    width: 200px;
-    padding: 12px 20px;
-    margin: 20px;
-    box-shadow: 5px 5px 10px;
-
-}
-
-
-
-
-
-
-
-
-
-
-/* Aca comienzan los stilos para la version desktop */
-
-
-
-@media (min-width: 1024px) {
-
-
-
-    /* Estilos para las categorias version desktop, documentales.html, peliculas.html y series.html*/
-
-
-    .info {
-        display: flex;
-        text-align: left;
-        flex-direction: column;
-        width: 70vw;
-        background-color: red($color: #000000);
-
-    }
-
-    .info p {
-        padding-left: 10px;
-    }
-
-    .container {
-        height: auto;
-    }
-    .titulo-documentales {
-        font-size: 4em;
-    }
-
-    .titulo-series {
-        font-size: 4em;
-    }
-
-
-
-}
 @import "../node_modules/bootstrap/scss/bootstrap";

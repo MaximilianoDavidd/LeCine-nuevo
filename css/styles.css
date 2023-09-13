@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* VARIABLES */
 /* Color principal de Le Cine */
 /* Tipografias, reset */
 * {
@@ -46,14 +47,14 @@ header nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 1.6em;
   list-style-type: none;
 }
 header nav .container-fluid, header nav .container-xxl, header nav .container-xl, header nav .container-lg, header nav .container-md, header nav .container-sm {
   background-color: rgb(8, 8, 8);
   padding: 0;
   height: auto;
-  padding-right: 30px;
+  padding-right: 1.9em;
 }
 header nav .conteiner {
   display: flex;
@@ -62,28 +63,28 @@ header nav .conteiner {
 }
 header nav .logo {
   margin: 0;
-  padding: 25px 30px;
+  padding: 1.6em 1.9em;
   font-weight: bold;
-  color: crimson;
+  color: rgb(220, 20, 60);
   font-size: 1.6em;
   align-items: start;
 }
 header nav .navbar-toggler {
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245);
   padding: 2px 4px;
 }
 header nav .nav-link {
-  padding: 5px 12px;
+  padding: 0.25em 1.2em;
   text-decoration: none;
   font-weight: bold;
   color: rgb(218, 216, 216);
   margin: 1em;
 }
 header nav .nav-link:hover {
-  color: crimson;
+  color: rgb(220, 20, 60);
 }
 header nav .color-acento {
-  color: crimson;
+  color: rgb(220, 20, 60);
 }
 
 /* Estilos de header para escritorio */
@@ -98,6 +99,14 @@ header nav .color-acento {
   }
 }
 /* Estilo del index.html */
+@keyframes h1Aparece {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #hero {
   display: flex;
   align-items: center;
@@ -111,26 +120,30 @@ header nav .color-acento {
   background-size: cover;
   padding-top: 45%;
 }
+#hero .titulo-hero {
+  animation: h1Aparece 3s;
+  font-size: 5em;
+}
 
 #Oppenheimer {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 30px;
+  margin: 1.9em;
 }
 #Oppenheimer .color-acento {
-  color: crimson;
+  color: rgb(220, 20, 60);
   font-weight: bold;
 }
 
 #nuestras-preferidas {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: rgb(238, 232, 232);
-  padding: 20px 0px;
+  padding: 1.2em 0em;
   text-align: center;
 }
 #nuestras-preferidas h2, #nuestras-preferidas .h2 {
-  margin-top: 20px;
+  margin-top: 1.2em;
   font-size: 3em;
 }
 #nuestras-preferidas p {
@@ -143,9 +156,9 @@ header nav .color-acento {
 #nuestras-preferidas .conteiner .carta {
   background-position: center center;
   background-size: cover;
-  padding: 30px 0px;
-  margin: 30px;
-  border-radius: 15px;
+  padding: 1.9em 0em;
+  margin: 1.9em;
+  border-radius: 0.9em;
 }
 #nuestras-preferidas .conteiner .carta:first-child {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../Recursos/old.jpg");
@@ -161,15 +174,16 @@ header nav .color-acento {
 .boton-index {
   font-size: 1, 5em;
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 0.6em 1.2em;
+  border-radius: 0.5em;
   border: 2px solid rgba(0, 0, 0, 0.8);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  background-color: crimson;
+  background-color: rgb(220, 20, 60);
   cursor: pointer;
+  transition: all 0.3s;
 }
 .boton-index:hover {
-  background-color: rgb(75, 30, 39);
+  background-color: rgb(235, 89, 118);
 }
 
 /* Algunos detalles para version tablet */
@@ -178,7 +192,7 @@ header nav .color-acento {
     display: flex;
     height: 120vh;
     width: 90vw;
-    margin-top: 5px;
+    margin-top: 0.25em;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Recursos/H2DVBWCFAZGYDFWWN4TEASWRZI.jpg");
@@ -195,14 +209,14 @@ header nav .color-acento {
     display: flex;
     height: 120vh;
     width: auto;
-    margin-top: 5px;
+    margin-top: 0.25em;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Recursos/portada-escritorio.jpeg");
     padding-top: 40vh;
     justify-content: center center;
     align-items: center center;
-    margin-top: 10px;
+    margin-top: 0.5em;
   }
   .container {
     display: flex;
@@ -220,36 +234,40 @@ header nav .color-acento {
   .categorias .carta {
     height: 40vh;
     width: 40vw;
+    transition: all 0.3s;
+  }
+  .categorias .carta:hover {
+    scale: 1.1;
   }
 }
 /* Estilos para el footer  version mobile*/
 footer {
-  background-color: black;
-  margin-top: 20px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 1em;
 }
 footer h4, footer .h4 {
   color: rgb(214, 213, 213);
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
   font-size: 1.4em;
 }
 footer p {
   margin: 0;
-  padding: 12px;
+  padding: 0.5em;
   color: rgb(31, 30, 30);
 }
 footer .logo {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  color: crimson;
+  color: rgb(220, 20, 60);
   font-size: 1.6em;
-  padding: 30px;
-  padding-top: 40px;
+  padding: 1.8em;
+  padding-top: 2.5em;
 }
 footer .conteiner {
   margin: 0;
-  height: 100px;
+  height: 6.2em;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -261,7 +279,7 @@ footer .social-media {
   justify-content: center;
 }
 footer .social-media a {
-  margin: 10px;
+  margin: 0.5em;
   text-decoration: none;
 }
 footer .conteiner-copy {
@@ -303,14 +321,14 @@ footer .conteiner-copy {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin: 30px;
+  margin: 1.9em;
   text-align: center;
 }
 
 .trailer {
   display: flex;
   justify-content: center;
-  margin: 50px 3px;
+  margin: 3.2em 0.3em;
 }
 
 /* Estilos de pelicula-semanal.html version escritorio */
@@ -321,16 +339,16 @@ footer .conteiner-copy {
   .peli-semanal {
     display: flex;
     height: 120vh;
-    margin-top: 5px;
+    margin-top: 0.25em;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../Recursos/portada-escritorio.jpeg");
-    padding-top: 5px;
+    padding-top: 0.25em;
   }
   .details p {
     text-align: center;
     text-align: left;
-    width: 1000px;
+    width: 60em;
     margin: auto;
   }
 }
@@ -357,6 +375,7 @@ footer .conteiner-copy {
 .form-padre2 form {
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(218, 216, 216, 0.74));
   margin: 5px;
   background-color: rgb(221, 218, 218);
   border-radius: 10px;
@@ -385,24 +404,24 @@ footer .conteiner-copy {
 }
 
 .boton-div {
-  width: 60px;
+  width: 3.8em;
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1.2em;
+  margin-top: 1.2em;
 }
 .boton-div .boton-form {
   font-size: 1em;
   font-weight: bold;
-  padding: 0px 20px;
-  border-radius: 10px;
+  padding: 0em 1.2em;
+  border-radius: 0.6em;
   border: 2px solid rgba(0, 0, 0, 0.5);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  background-color: crimson;
+  background-color: rgb(220, 20, 60);
 }
 .boton-div .boton-form:hover {
-  background-color: rgb(196, 99, 118);
+  background-color: rgb(235, 89, 118);
 }
 
 /* Estilos de inscripcion.html version escritorio */
@@ -418,12 +437,12 @@ footer .conteiner-copy {
   .form-padre1 form {
     display: flex;
     justify-content: center;
-    margin: 10px;
-    background-color: rgb(221, 218, 218);
-    border-radius: 10px;
     flex-direction: column;
-    width: 700px;
-    height: 400px;
+    margin: 0.5em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.849), rgba(218, 216, 216, 0.74));
+    border-radius: 0.5em;
+    width: 44em;
+    height: 25em;
   }
   .form-padre1 form .form-section {
     display: flex;
@@ -431,37 +450,39 @@ footer .conteiner-copy {
     justify-content: center;
   }
   .form-padre1 form .form-section .columna1 {
-    margin: 10px;
+    margin: 0.5em;
   }
   .form-padre1 form .form-section .columna1 input {
-    height: 25px;
+    height: 1.6em;
     display: flex;
-    margin-top: 30px;
+    margin-top: 1.9em;
     border: 5px;
     border-radius: 2px;
     box-shadow: 5px 5px 10px;
   }
   .form-padre1 form .form-section .columna2 {
-    margin: 10px;
+    margin: 0.5em;
   }
   .form-padre1 form .form-section .columna2 input {
-    height: 25px;
+    height: 1.6em;
     display: flex;
-    margin-top: 30px;
+    margin-top: 1.9em;
     border: 5px;
     border-radius: 2px;
     box-shadow: 5px 5px 10px;
   }
   .form-padre1 form .form-section .columna2 .style-date {
-    width: 183px;
+    width: 11.5em;
   }
   .boton-form {
     font-size: 1, 5em;
-    margin-top: 30px;
+    margin-top: 1.9em;
     cursor: pointer;
   }
   .form-p {
-    margin: 30px 0px;
+    margin: auto;
+    width: 60em;
+    padding: 3em 0em;
   }
 }
 /* estilos de galeria.html */
@@ -470,51 +491,54 @@ footer .conteiner-copy {
   flex-direction: column;
   justify-content: center;
 }
-
-.contenedor-galeria {
+#main .contenedor-galeria {
   display: flex;
   flex-direction: column;
 }
-
-.titulo-galeria {
+#main .contenedor-galeria .titulo-galeria {
   width: 100%;
   text-align: center;
 }
-
-.img-galeria {
+#main .contenedor-galeria .galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main .contenedor-galeria .galeria .img-galeria {
   width: 50vw;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
 }
-
-.galeria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.galeria2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.p-img {
+#main .contenedor-galeria .galeria .p-img {
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
 }
-
-.section-noticias {
+#main .contenedor-galeria .galeria2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main .contenedor-galeria .galeria2 .img-galeria {
+  width: 50vw;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+#main .contenedor-galeria .galeria2 .p-img {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+}
+#main .contenedor-galeria .section-noticias {
   display: none;
 }
 
+/* Estilos para galeria.html version desktop */
 @media (min-width: 1024px) {
-  /* Estilos para galeria.html version desktop */
   #main {
     height: 500vh;
   }
-  .contenedor-galeria {
+  #main .contenedor-galeria {
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -523,9 +547,9 @@ footer .conteiner-copy {
     gap: 0px 0px;
     height: 100%;
   }
-  .titulo-galeria {
+  #main .contenedor-galeria .titulo-galeria {
     grid-area: 1/1/2/4;
-    color: black;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -536,89 +560,99 @@ footer .conteiner-copy {
     height: 100vh;
     width: 100%;
   }
-  .galeria {
+  #main .contenedor-galeria .galeria {
     grid-area: 2/1/5/4;
     display: flex;
     flex-direction: column;
     width: 50%;
     align-items: baseline;
   }
-  .galeria2 {
+  #main .contenedor-galeria .galeria .img-galeria {
+    width: 50vh;
+    height: auto;
+    margin: 0.5em 3.1em;
+    margin-bottom: 10vh;
+  }
+  #main .contenedor-galeria .galeria .p-img {
+    margin-left: 1.9em;
+    margin-bottom: 0.5em;
+  }
+  #main .contenedor-galeria .galeria2 {
     grid-area: 2/3/5/4;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: baseline;
   }
-  .img-galeria {
+  #main .contenedor-galeria .galeria2 .img-galeria {
     width: 50vh;
     height: auto;
-    margin: 10px 50px;
+    margin: 0.5em 3.1em;
     margin-bottom: 10vh;
   }
-  .p-img {
-    margin-left: 30px;
-    margin-bottom: 10px;
+  #main .contenedor-galeria .galeria2 .p-img {
+    margin-left: 1.9em;
+    margin-bottom: 0.5em;
   }
   /* estilos de la seccion de noticias de desktop. Version mobile no tiene esta seccion*/
-  .section-noticias {
+  #main .contenedor-galeria .section-noticias {
     grid-area: 1/4/5/5;
     background-color: rgb(240, 235, 235);
     padding-top: 3em;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px;
+    border-radius: 0.5em;
+    box-shadow: 0em 0em 1.1em;
     overflow-y: scroll;
     height: 60%;
     width: 100%;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 0.5em;
   }
-  .section-noticias p {
-    padding: 15px;
-    margin-bottom: 10px;
-  }
-  .titulo-noticias h4, .titulo-noticias .h4 {
-    padding-bottom: 20px;
-    font-size: 2em;
-    text-align: center;
-  }
-  .section-noticias h5, .section-noticias .h5 {
-    padding: 10px;
-    margin-top: 40px;
-    font-size: 1em;
-  }
-  .section-noticias::-webkit-scrollbar {
-    width: 15px;
-  }
-  .section-noticias::-webkit-scrollbar-thumb {
-    background-color: rgb(235, 89, 118);
-    border-radius: 5px;
-  }
-  .section-noticias::-webkit-scrollbar-thumb:hover {
-    background-color: crimson;
-  }
-  .img-noticia {
+  #main .contenedor-galeria .section-noticias .img-noticia {
     justify-content: center;
     align-items: center;
   }
-  hr {
+  #main .contenedor-galeria .section-noticias hr {
     width: 100%;
+  }
+  #main .contenedor-galeria .section-noticias .titulo-noticias h4, #main .contenedor-galeria .section-noticias .titulo-noticias .h4 {
+    padding-bottom: 1.1em;
+    font-size: 2em;
+    text-align: center;
+  }
+  #main .contenedor-galeria .section-noticias h5, #main .contenedor-galeria .section-noticias .h5 {
+    padding: 0.5em;
+    margin-top: 2.5em;
+    font-size: 1em;
+  }
+  #main .contenedor-galeria .section-noticias p {
+    padding: 0.7em;
+    margin-bottom: 0.5em;
+  }
+  #main .contenedor-galeria .section-noticias::-webkit-scrollbar {
+    width: 0.7em;
+  }
+  #main .contenedor-galeria .section-noticias::-webkit-scrollbar-thumb {
+    background-color: rgb(235, 89, 118);
+    border-radius: 0.25em;
+  }
+  #main .contenedor-galeria .section-noticias::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(220, 20, 60);
   }
 }
 /* Estilos Peliculas.html */
 #Peliculas p {
-  margin: 20px;
+  margin: 1em;
 }
 #Peliculas h2, #Peliculas .h2 {
-  margin: 20px;
+  margin: 1em;
 }
 
 .titulo-peliculas {
   text-align: center;
-  margin: 20px;
+  margin: 1em;
 }
 
 .container {
@@ -631,50 +665,50 @@ footer .conteiner-copy {
   background-image: url("../Recursos/arg11985.jpg");
   background-size: cover;
   background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
   box-shadow: 5px 5px 10px;
 }
 .container .img-northman {
   background-image: url("../Recursos/nothman.jpg");
   background-size: cover;
   background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
   box-shadow: 5px 5px 10px;
 }
 .container .img-nope {
   background-image: url("../Recursos/nope.jpg");
   background-size: cover;
   background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
   box-shadow: 5px 5px 10px;
 }
 .container .img-jurassik {
   background-image: url("../Recursos/jurassik3.jpg");
   background-size: cover;
   background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
   box-shadow: 5px 5px 10px;
 }
 .container .img-elvis {
   background-image: url("../Recursos/elvis.webp");
   background-size: cover;
   background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
   box-shadow: 5px 5px 10px;
 }
 
@@ -692,143 +726,151 @@ footer .conteiner-copy {
     width: 70vw;
   }
   #Peliculas .container .info p {
-    padding-left: 10px;
+    padding-left: 1em;
   }
   .titulo-peliculas {
     font-size: 4em;
   }
 }
-/* Estilos de series.html */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#Series p {
-  margin: 20px;
-}
-
-#Series h2, #Series .h2 {
-  margin: 20px;
-}
-
-.titulo-series {
-  text-align: center;
-  margin: 20px;
-}
-
-#Series .img-black {
-  background-image: url("../Recursos/Black_Mirror.webp");
-  background-size: cover;
-  background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
-  box-shadow: 5px 5px 10px;
-}
-
-#Series .img-dahmer {
-  background-image: url("../Recursos/dahmer.webp");
-  background-size: cover;
-  background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
-  box-shadow: 5px 5px 10px;
-}
-
-#Series .img-citadel {
-  background-image: url("../Recursos/citadel.jfif");
-  background-size: cover;
-  background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
-  box-shadow: 5px 5px 10px;
-}
-
 /* Estilos de documentales.html */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.titulo-documentales {
   text-align: center;
-}
-
-#Documentales p {
-  margin: 20px;
+  margin: 1em;
 }
 
 #Documentales h2, #Documentales .h2 {
-  margin: 20px;
+  margin: 1em;
 }
-
-.titulo-documentales {
+#Documentales p {
+  margin: 1em;
+}
+#Documentales .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin: 20px;
 }
-
-#Documentales .img-black {
+#Documentales .container .img-black {
   background-image: url("../Recursos/CARTEL-BLACKFISH.jpg");
   background-size: cover;
   background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
   box-shadow: 5px 5px 10px;
 }
-
-#Documentales .img-code {
+#Documentales .container .img-code {
   background-image: url("../Recursos/code.jpg");
   background-size: cover;
   background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
   box-shadow: 5px 5px 10px;
 }
-
-#Documentales .img-robin {
+#Documentales .container .img-robin {
   background-image: url("../Recursos/Robin's_Wish_Poster.jpg");
   background-size: cover;
   background-position: center center;
-  height: 300px;
-  width: 200px;
-  padding: 12px 20px;
-  margin: 20px;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
   box-shadow: 5px 5px 10px;
 }
 
-/* Aca comienzan los stilos para la version desktop */
+/* estilos para version Desktop */
 @media (min-width: 1024px) {
-  /* Estilos para las categorias version desktop, documentales.html, peliculas.html y series.html*/
-  .info {
+  #Documentales .container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  #Documentales .container .info {
     display: flex;
     text-align: left;
     flex-direction: column;
     width: 70vw;
-    background-color: 0;
   }
-  .info p {
-    padding-left: 10px;
-  }
-  .container {
-    height: auto;
+  #Documentales .container .info p {
+    padding-left: 1em;
   }
   .titulo-documentales {
     font-size: 4em;
+  }
+}
+/* Estilos de series.html */
+.titulo-series {
+  text-align: center;
+  margin: 1em;
+}
+
+#Series h2, #Series .h2 {
+  margin: 1em;
+}
+#Series p {
+  margin: 1em;
+}
+#Series .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#Series .container .img-black {
+  background-image: url("../Recursos/Black_Mirror.webp");
+  background-size: cover;
+  background-position: center center;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
+  box-shadow: 5px 5px 10px;
+}
+#Series .container .img-dahmer {
+  background-image: url("../Recursos/dahmer.webp");
+  background-size: cover;
+  background-position: center center;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
+  box-shadow: 5px 5px 10px;
+}
+#Series .container .img-citadel {
+  background-image: url("../Recursos/citadel.jfif");
+  background-size: cover;
+  background-position: center center;
+  height: 20em;
+  width: 13em;
+  padding: 0.5em 1em;
+  margin: 1em;
+  box-shadow: 5px 5px 10px;
+}
+
+/* Estilos para las categorias version desktop series.html*/
+@media (min-width: 1024px) {
+  #Series .container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  #Series .container .info {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    width: 70vw;
+  }
+  #Series .container .info p {
+    padding-left: 1em;
   }
   .titulo-series {
     font-size: 4em;
   }
 }
+/* Boostrap */
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

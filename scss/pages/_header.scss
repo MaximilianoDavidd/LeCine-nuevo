@@ -6,14 +6,14 @@ header {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding-bottom: 25px;
+        padding-bottom: 1.6em;
         list-style-type: none;
 
         .container-fluid {
             background-color: rgb(8, 8, 8);
             padding: 0;
             height: auto;
-            padding-right: 30px;
+            padding-right: 1.9em;
         }
 
         .conteiner {
@@ -24,22 +24,22 @@ header {
 
         .logo {
             margin: 0;
-            padding: 25px 30px;
+            padding: 1.6em 1.9em;
             font-weight: bold;
-            color: crimson;
+            color: $color1;
             font-size: 1.6em;
             align-items: start;
 
         }
 
         .navbar-toggler {
-            background-color: whitesmoke;
+            background-color: rgb(245, 245, 245);
             padding: 2px 4px;
 
         }
 
         .nav-link {
-            padding: 5px 12px;
+            padding: 0.25em 1.2em;
             text-decoration: none;
             font-weight: bold;
             color: rgb(218, 216, 216);
@@ -47,11 +47,11 @@ header {
         }
 
         .nav-link:hover {
-            color: crimson;
+            color: $color1;
         }
 
         .color-acento {
-            color: crimson;
+            color: $color1;
         }
     }
 }

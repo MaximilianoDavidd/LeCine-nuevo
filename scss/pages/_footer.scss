@@ -1,19 +1,19 @@
 /* Estilos para el footer  version mobile*/
 
 footer {
-    background-color: black;
-    margin-top: 20px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 1em;
 
     h4 {
         color: rgb(214, 213, 213);
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 0.5em;
         font-size: 1.4em;
     }
 
     p {
         margin: 0;
-        padding: 12px;
+        padding: 0.5em;
         color: rgb(31, 30, 30);
     }
 
@@ -21,15 +21,15 @@ footer {
         display: flex;
         justify-content: center;
         font-weight: bold;
-        color: crimson;
+        color: $color1;
         font-size: 1.6em;
-        padding: 30px;
-        padding-top: 40px;
+        padding: 1.8em;
+        padding-top: 2.5em;
     }
 
     .conteiner {
         margin: 0;
-        height: 100px;
+        height: 6.2em;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -42,7 +42,7 @@ footer {
         justify-content: center;
 
         a {
-            margin: 10px;
+            margin: 0.5em;
             text-decoration: none;
         }
     }

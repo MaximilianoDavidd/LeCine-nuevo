@@ -1,0 +1,90 @@
+/* Estilos de series.html */
+
+.titulo-series {
+    text-align: center;
+    margin: 1em;
+}
+
+
+#Series {
+
+    h2 {
+        margin: 1em;
+    }
+
+    p {
+        margin: 1em;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .img-black {
+            background-image: url("../Recursos/Black_Mirror.webp");
+            background-size: cover;
+            background-position: center center;
+            height: 20em;
+            width: 13em;
+            padding: 0.5em 1em;
+            margin: 1em;
+            box-shadow: 5px 5px 10px;
+
+        }
+
+        .img-dahmer {
+            background-image: url("../Recursos/dahmer.webp");
+            background-size: cover;
+            background-position: center center;
+            height: 20em;
+            width: 13em;
+            padding: 0.5em 1em;
+            margin: 1em;
+            box-shadow: 5px 5px 10px;
+
+        }
+
+        .img-citadel {
+            background-image: url("../Recursos/citadel.jfif");
+            background-size: cover;
+            background-position: center center;
+            height: 20em;
+            width: 13em;
+            padding: 0.5em 1em;
+            margin: 1em;
+            box-shadow: 5px 5px 10px;
+
+        }
+    }
+}
+
+
+/* Estilos para las categorias version desktop series.html*/
+
+@media (min-width: 1024px) {
+
+        #Series {
+            .container {
+                height: auto;
+                display: flex;
+                flex-direction: row;
+
+                .info {
+                    display: flex;
+                    text-align: left;
+                    flex-direction: column;
+                    width: 70vw;
+
+                    p {
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }
+
+        .titulo-series {
+            font-size: 4em;
+        }
+    }

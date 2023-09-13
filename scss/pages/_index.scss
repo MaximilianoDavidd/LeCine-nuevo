@@ -1,5 +1,14 @@
 /* Estilo del index.html */
 
+@keyframes h1Aparece{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 #hero {
     display: flex;
     align-items: center;
@@ -14,13 +23,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 45%;
+
+    .titulo-hero{
+        animation: h1Aparece 3s;
+        font-size: 5em;
+    }
 }
 
 #Oppenheimer {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 30px;
+    margin: 1.9em;
 
     .color-acento {
         color: $color1;
@@ -29,13 +43,13 @@
 }
 
 #nuestras-preferidas {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: rgb(238, 232, 232);
-    padding: 20px 0px;
+    padding: 1.2em 0em;
     text-align: center;
 
     h2 {
-        margin-top: 20px;
+        margin-top: 1.2em;
         font-size: 3em;
 
     }
@@ -51,9 +65,9 @@
         .carta {
             background-position: center center;
             background-size: cover;
-            padding: 30px 0px;
-            margin: 30px;
-            border-radius: 15px;
+            padding: 1.9em 0em;
+            margin: 1.9em;
+            border-radius: 0.9em;
         }
 
         .carta:first-child {
@@ -82,14 +96,15 @@
 .boton-index {
     font-size: 1, 5em;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 0.6em 1.2em;
+    border-radius: 0.5em;
     border: 2px solid rgba(0, 0, 0, 0.8);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     background-color: $color1;
     cursor: pointer;
+    transition: all .3s;
     &:hover {
-        background-color: rgb(75, 30, 39);
+        background-color: $color2;
     }
 }
 
@@ -105,7 +120,7 @@
         display: flex;
         height: 120vh;
         width: 90vw;
-        margin-top: 5px;
+        margin-top: 0.25em;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: linear-gradient(0deg,
@@ -132,7 +147,7 @@
         display: flex;
         height: 120vh;
         width: auto;
-        margin-top: 5px;
+        margin-top: 0.25em;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: linear-gradient(0deg,
@@ -141,7 +156,7 @@
         padding-top: 40vh;
         justify-content: center center;
         align-items: center center;
-        margin-top: 10px;
+        margin-top: 0.5em;
     }
 
     .container {
@@ -162,6 +177,10 @@
         .carta {
             height: 40vh;
             width: 40vw;
+            transition: all .3s;
+            &:hover{ scale:(1.1);
+
+            }
         }
     }
 }

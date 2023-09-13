@@ -1,0 +1,88 @@
+/* Estilos de documentales.html */
+
+.titulo-documentales {
+    text-align: center;
+    margin: 1em;
+}
+
+#Documentales {
+
+    h2 {
+        margin: 1em;
+    }
+
+    p {
+        margin: 1em;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .img-black {
+            background-image: url("../Recursos/CARTEL-BLACKFISH.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 20em;
+            width: 13em;
+            padding: 0.5em 1em;
+            margin: 1em;
+            box-shadow: 5px 5px 10px;
+        }
+
+        .img-code {
+            background-image: url("../Recursos/code.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 20em;
+            width: 13em;
+            padding: 0.5em 1em;
+            margin: 1em;
+            box-shadow: 5px 5px 10px;
+        }
+
+        .img-robin {
+            background-image: url("../Recursos/Robin\'s_Wish_Poster.jpg");
+            background-size: cover;
+            background-position: center center;
+            height: 20em;
+            width: 13em;
+            padding: 0.5em 1em;
+            margin: 1em;
+            box-shadow: 5px 5px 10px;
+
+        }
+    }
+}
+
+
+
+/* estilos para version Desktop */
+
+@media (min-width: 1024px) {
+
+    #Documentales {
+        .container {
+            height: auto;
+            display: flex;
+            flex-direction: row;
+
+            .info {
+                display: flex;
+                text-align: left;
+                flex-direction: column;
+                width: 70vw;
+
+                p {
+                    padding-left: 1em;
+                }
+            }
+        }
+    }
+
+    .titulo-documentales {
+        font-size: 4em;
+    }
+}
